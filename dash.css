@@ -474,7 +474,7 @@ button[type="submit"]:hover {
 @media screen and (max-width: 481px) {
   .notepad {
     height: 300px;
-    width: 400px;
+    width: 300px;
   }
 }
 
