@@ -166,7 +166,6 @@ h1 {
 
 #userCard {
   display: flex;
-  margin-top: 100px;
   justify-content: center;
   align-items: center;
   background-color: transparent;
@@ -177,6 +176,7 @@ h1 {
 @media screen and (max-width: 481px) {
   #userCard {
     width: 250px;
+    padding-top: 100px;
   }
 }
 
