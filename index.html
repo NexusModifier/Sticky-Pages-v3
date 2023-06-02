@@ -12,6 +12,14 @@
 </head>
 
 <body>
+
+  <div class="siding">
+
+  <header class="heading">
+    <h1>Sticky Pages</h1>
+    <h4>- make sticking to tasks easier -</h4>
+  </header>
+
   <div class="sidebar">
     <ul>
       <li onclick="changeContent('user')"><i class="fa-solid fa-user"></i></li>
@@ -20,17 +28,13 @@
       <li onclick="changeContent('notes')"><i class="fa-solid fa-book"></i></i></li>
       <li onclick="changeContent('bills')"><i class="fa-solid fa-money-bill"></i></li>
       <li onclick="changeContent('calendar')"><i class="fa-solid fa-calendar"></i></li>
-      <li onclick="changeContent('messages')"><i class="fa-solid fa-comment"></i></li>
       <li onclick="changeContent('settings')"><i class="fa-solid fa-bars"></i></li>
     </ul>
   </div>
 
-  <div class="content" id="content">
+</div>
 
-    <header class="heading">
-      <h1>Sticky Pages</h1>
-      <p>- make sticking to tasks easier -</p>
-    </header>
+  <div class="content" id="content">
 
 
 
@@ -39,10 +43,11 @@
       <div class="user-grid">
 
         <div class="user-grid-one"> 
-          <h2>Hello Drew</h2>       
+          <h2>Good Evening</h2>   
+          <h3 id="weather-data">Loading...</h3>      
         </div>
         <div class="user-grid-two">   
-          <p id="weather-data">Loading...</p>      
+          <h2>Something</h2>   
         </div>
         <div class="user-grid-three">   
           <h2>Upcoming Bills</h2>      
