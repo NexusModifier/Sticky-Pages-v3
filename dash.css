@@ -175,6 +175,7 @@ h1 {
 
 @media screen and (max-width: 481px) {
   #userCard {
+    margin-top: 100px;
     width: 250px;
   }
 }
