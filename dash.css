@@ -8,10 +8,7 @@ body {
 
 @media screen and (max-width: 481px) {
   body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    flex-direction: column;
   }
 }
 
@@ -38,39 +35,36 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  margin: 50px;
+  border-radius: 5px;
   width: 250px;
   height: 100px;
   background-color: #fffbbd;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
 .sidebar {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   background-color: #333;
   box-shadow: rgb(0, 0, 0) 3px 3px 6px 0px inset, rgba(154, 167, 125, 0.5) -3px -3px 6px 1px inset;
   color: #fffbbd;
   padding: 20px;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 325px;
-  margin-bottom: 325px;
+  margin-top: 100px;
   width: 15px;
-  border-radius: 25px;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 481px) {
   .sidebar {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding: 15px;
-  height: 15px;
-  width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 15px;
+    height: 15px;
+    width: 300px;
   }
 }
 
@@ -82,8 +76,8 @@ h1 {
 
 @media screen and (max-width: 481px) {
   .sidebar ul {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -93,35 +87,59 @@ h1 {
 
 @media screen and (max-width: 481px) {
   .sidebar li {
-  margin-right: 15px;
-  margin-left: 15px;
+    margin-right: 12px;
+    margin-left: 12px;
   }
+}
+
+.siding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 20px;
+  padding-top: 100px;
+  height: 75vh;
 }
 
 @media screen and (max-width: 481px) {
   .content {
-align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
   }
 }
 
 .card {
   border-radius: 5px;
-  padding: 20px;
   width: 300px;
   transition: all 0.5s ease-in-out;
 }
 
 @keyframes bounce {
-  0% { transform: translateY(0); }
-  30% { transform: translateY(-10px); }
-  60% { transform: translateY(0); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(-10px);
+  }
+
+  60% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 
@@ -155,32 +173,53 @@ align-items: center;
   width: 1500px;
 }
 
+@media screen and (max-width: 481px) {
+  #userCard {
+    width: 250px;
+  }
+}
+
 .user-grid {
+  margin-top: 50px;
+  margin-right: 100px;
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(3, 0fr); /* Adjust the number of columns as needed */
-  grid-gap: 50px; /* Adjust the gap between grid items as needed */
+  grid-template-columns: repeat(3, 0fr);
+  /* Adjust the number of columns as needed */
+  grid-gap: 50px;
+  /* Adjust the gap between grid items as needed */
 }
 
 @media screen and (max-width: 481px) {
   .user-grid {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0px;
   }
 }
 
 .user-grid-one {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #fffbbd;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   margin: 20px;
-  height: 400px;
+  height: 300px;
   width: 400px;
   transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 481px) {
+  .user-grid-one {
+    height: 400px;
+    width: 400px;
+  }
 }
 
 .user-grid-two {
@@ -191,9 +230,16 @@ align-items: center;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   margin: 20px;
-  height: 200px;
+  height: 300px;
   width: 400px;
   transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 481px) {
+  .user-grid-two {
+    height: 400px;
+    width: 400px;
+  }
 }
 
 .user-grid-three {
@@ -204,9 +250,16 @@ align-items: center;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   margin: 20px;
-  height: 200px;
+  height: 300px;
   width: 400px;
   transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 481px) {
+  .user-grid-three {
+    height: 400px;
+    width: 400px;
+  }
 }
 
 .user-grid-four {
@@ -217,9 +270,16 @@ align-items: center;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   margin: 20px;
-  height: 200px;
+  height: 300px;
   width: 400px;
   transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 481px) {
+  .user-grid-four {
+    height: 400px;
+    width: 400px;
+  }
 }
 
 .user-grid-five {
@@ -230,9 +290,16 @@ align-items: center;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   margin: 20px;
-  height: 200px;
+  height: 300px;
   width: 400px;
   transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 481px) {
+  .user-grid-five {
+    height: 400px;
+    width: 400px;
+  }
 }
 
 .user-grid-six {
@@ -243,17 +310,22 @@ align-items: center;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   margin: 20px;
-  height: 200px;
+  height: 300px;
   width: 400px;
   transition: all 0.5s ease-in-out;
 }
 
-
+@media screen and (max-width: 481px) {
+  .user-grid-six {
+    height: 400px;
+    width: 400px;
+  }
+}
 
 
 #tasksCard {
   height: 650px;
-  width: 1550px;
+  width: 1400px;
   margin-top: 75px;
   padding: 20px;
   border-radius: 10px;
@@ -269,37 +341,12 @@ align-items: center;
 
 @media screen and (max-width: 481px) {
   #tasksCard {
-    height: 375px;
-    width: 375px;
-  }
-}
-
-#notesCard {
-  width: 1500px;
-  margin-top: 75px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-  background-color: #fffbbd;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  opacity: .95;
-  overflow-y: auto;
-}
-
-@media screen and (max-width: 481px) {
-  #notesCard {
-    height: 375px;
+    margin-top: 0px;
+    margin-bottom: 150px;
+    height: 600px;
     width: 350px;
   }
 }
-
-
-
-
 
 
 
@@ -309,17 +356,18 @@ form {
   align-items: center;
   margin-top: 40px;
   margin-bottom: 20px;
-  width: 1550px;
+  width: 1400px;
 }
 
 @media screen and (max-width: 1007px) {
   form {
-    width: 375px;
+    width: 350px;
   }
 }
 
 input[type="text"] {
   color: black;
+  background-color: #fffddaa9;
   flex: 1;
   padding: 10px;
   border-radius: 5px;
@@ -336,7 +384,7 @@ button[type="submit"] {
   color: #000000;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
 button[type="submit"]:hover {
@@ -394,7 +442,7 @@ button[type="submit"]:hover {
   color: #fff;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
 .todo-list li button:hover {
@@ -455,9 +503,30 @@ button[type="submit"]:hover {
 
 
 
+#notesCard {
+  width: 1400px;
+  margin-top: 75px;
+  margin-bottom: 150px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  background-color: #fffbbd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  opacity: .95;
+  overflow-y: auto;
+}
 
-
-
+@media screen and (max-width: 481px) {
+  #notesCard {
+    margin-top: 0;
+    height: 600px;
+    width: 325px;
+  }
+}
 
 
 .notepad {
@@ -466,7 +535,7 @@ button[type="submit"]:hover {
   align-items: center;
   background-color: #fffbbd;
   border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   opacity: .9;
   font-family: 'Quicksand', sans-serif;
 }
@@ -474,21 +543,19 @@ button[type="submit"]:hover {
 @media screen and (max-width: 481px) {
   .notepad {
     height: 300px;
-    width: 300px;
+    width: 400px;
   }
 }
 
 .toolbar {
   background-color: #fffbbd;
   padding: 10px;
-  margin-bottom: 10px;
   margin-left: 400px;
   margin-right: 400px;
-  border-radius: 20px;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   opacity: .95;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -496,7 +563,7 @@ button[type="submit"]:hover {
   .toolbar {
     margin-left: 0;
     margin-right: 0;
-    width: 350px;
+    width: 310px;
   }
 }
 
@@ -513,7 +580,7 @@ button[type="submit"]:hover {
   margin-right: 50px;
   border-radius: 10px;
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   transition: background-color 0.2s ease-in-out;
   font-family: 'Quicksand', sans-serif;
 }
@@ -543,38 +610,38 @@ button[type="submit"]:hover {
 
 .editor {
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 textarea {
   background-color: #fffcd4;
   color: rgba(0, 0, 0, 0.603);
-  width: 1450px;
+  width: 1350px;
   height: 500px;
   border: none;
   resize: none;
   font-size: 16px;
   line-height: 1.5;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 10px;
   margin: auto;
   opacity: .9;
-  box-shadow: rgba(20, 20, 20, 0.74) 0px 30px 60px -12px inset, rgba(20, 20, 20, 0.74) 0px 18px 36px -18px inset;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   font-family: 'Quicksand', sans-serif;
 }
 
 @media screen and (max-width: 481px) {
   textarea {
-    height: 300px;
+    height: 400px;
     width: 300px;
   }
 }
 
 
 .home {
-display: flex;
-justify-content: center;
-margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
 }
 
 
