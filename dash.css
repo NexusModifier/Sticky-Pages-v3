@@ -35,7 +35,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 50px;
+  margin-top: 50px;
   border-radius: 5px;
   width: 250px;
   height: 100px;
@@ -114,7 +114,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 0px;
   }
 }
 
@@ -217,7 +217,7 @@ h1 {
 
 @media screen and (max-width: 481px) {
   .user-grid-one {
-    height: 400px;
+    height: 300px;
     width: 400px;
   }
 }
@@ -237,7 +237,7 @@ h1 {
 
 @media screen and (max-width: 481px) {
   .user-grid-two {
-    height: 400px;
+    height: 300px;
     width: 400px;
   }
 }
@@ -257,7 +257,7 @@ h1 {
 
 @media screen and (max-width: 481px) {
   .user-grid-three {
-    height: 400px;
+    height: 300px;
     width: 400px;
   }
 }
@@ -277,7 +277,7 @@ h1 {
 
 @media screen and (max-width: 481px) {
   .user-grid-four {
-    height: 400px;
+    height: 300px;
     width: 400px;
   }
 }
@@ -297,7 +297,7 @@ h1 {
 
 @media screen and (max-width: 481px) {
   .user-grid-five {
-    height: 400px;
+    height: 300px;
     width: 400px;
   }
 }
@@ -317,7 +317,7 @@ h1 {
 
 @media screen and (max-width: 481px) {
   .user-grid-six {
-    height: 400px;
+    height: 300px;
     width: 400px;
   }
 }
@@ -524,7 +524,7 @@ button[type="submit"]:hover {
   #notesCard {
     margin-top: 0;
     height: 600px;
-    width: 325px;
+    width: 350px;
   }
 }
 
