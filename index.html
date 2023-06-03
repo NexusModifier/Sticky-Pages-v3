@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Sticky Board</title>
+  <title>Sticky Pages</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,116 +12,123 @@
 </head>
 
 <body>
-  
+
   <div class="siding">
 
-  <header class="heading">
-    <h1>Sticky Board</h1>
-    <h4>- make sticking to tasks easier -</h4>
-  </header>
+    <header class="heading">
+      <h1>Sticky Pages</h1>
+      <h4>- make sticking to tasks easier -</h4>
+    </header>
 
-  <div class="sidebar">
-    <ul>
-      <li onclick="changeContent('user')"><i class="fa-solid fa-user"></i></li>
-      <li onclick="changeContent('tasks')"><i class="fa-solid fa-list"></i></li>
-      <li onclick="changeContent('projects')"><i class="fa-solid fa-file"></i></li>
-      <li onclick="changeContent('notes')"><i class="fa-solid fa-book"></i></i></li>
-      <li onclick="changeContent('bills')"><i class="fa-solid fa-money-bill"></i></li>
-      <li onclick="changeContent('calendar')"><i class="fa-solid fa-calendar"></i></li>
-      <li onclick="changeContent('settings')"><i class="fa-solid fa-bars"></i></li>
-    </ul>
+    <div class="sidebar">
+      <ul>
+        <li onclick="changeContent('user')"><i class="fa-solid fa-user"></i></li>
+        <li onclick="changeContent('tasks')"><i class="fa-solid fa-list"></i></li>
+        <li onclick="changeContent('projects')"><i class="fa-solid fa-file"></i></li>
+        <li onclick="changeContent('notes')"><i class="fa-solid fa-book"></i></i></li>
+        <li onclick="changeContent('bills')"><i class="fa-solid fa-money-bill"></i></li>
+        <li onclick="changeContent('calendar')"><i class="fa-solid fa-calendar"></i></li>
+        <li onclick="changeContent('settings')"><i class="fa-solid fa-bars"></i></li>
+      </ul>
+    </div>
+
   </div>
-
-</div>
 
   <div class="content" id="content">
 
 
 
-      <div class="card" id="userCard">
+    <div class="card" id="userCard">
 
       <div class="user-grid">
 
-        <div class="user-grid-one"> 
-          <h2>Good Evening</h2>   
-          <h3 id="weather-data">Loading...</h3>      
+        <div class="user-grid-one">
+          <h2>Good Evening</h2>
+          <h3 id="weather-data">Loading...</h3>
         </div>
-        <div class="user-grid-two">   
-          <h2>Something</h2>   
+        <div class="user-grid-two">
+          <h2>Something</h2>
         </div>
-        <div class="user-grid-three">   
-          <h2>Upcoming Bills</h2>      
+        <div class="user-grid-three">
+          <h2>Upcoming Bills</h2>
         </div>
-        <div class="user-grid-four">    
-          <h2>Tagged Tasks</h2>     
+        <div class="user-grid-four">
+          <h2>Tagged Tasks</h2>
         </div>
-        <div class="user-grid-five">     
-          <h2>Goals</h2>    
+        <div class="user-grid-five">
+          <h2>Goals</h2>
         </div>
-        <div class="user-grid-six">   
-          <h2>Notifications</h2>      
-        </div>
-
+        <div class="user-grid-six">
+          <h2>Notifications</h2>
         </div>
 
       </div>
 
-      <div class="card" id="projectsCard" style="display: none;">
-        <h2>Projects</h2>
-        <p>Some content here...</p>
-      </div>
+    </div>
 
-      <div class="card" id="tasksCard" style="display: none;">
+    <div class="card" id="projectsCard" style="display: none;">
 
+      <div class="folder">
 
-        
-          <h1>T a s k s</h1>
-        
+        <div class="pro-sidebar">
+          +
+        </div>
 
-        <a class="home" href="index.html">
-          <i class="fa-solid fa-house"></i>
-        </a>
-
-        <form>
-          <input class="input" type="text" placeholder="Add a new to-do">
-          <button type="submit"><i class="fa-solid fa-plus"></i></button>
-        </form>
-        <ul class="todo-list"></ul>
+        <div class="pro-content">
+          
+        </div>
 
       </div>
 
-      <div class="card" id="billsCard" style="display: none;">
-        <h2>Bills</h2>
-        <p>Some content here...</p>
+    </div>
+
+    <div class="card" id="tasksCard" style="display: none;">
+
+
+
+      <h1>T a s k s</h1>
+
+
+      <form>
+        <input class="input" type="text" placeholder="Add a new to-do">
+        <button type="submit"><i class="fa-solid fa-plus"></i></button>
+      </form>
+      <ul class="todo-list"></ul>
+
+    </div>
+
+    <div class="card" id="billsCard" style="display: none;">
+      <h2>Bills</h2>
+      <p>Some content here...</p>
+    </div>
+
+    <div class="card" id="calendarCard" style="display: none;">
+      <h2>Calendar</h2>
+      <p>Some content here...</p>
+    </div>
+
+    <div class="card" id="notesCard" style="display: none;">
+
+      <div class="editor">
+        <textarea id="note"></textarea>
+      </div>
+      <div class="toolbar">
+        <button id="saveTxtButton">Save</button>
+        <button id="clearButton">Clear</button>
       </div>
 
-      <div class="card" id="calendarCard" style="display: none;">
-        <h2>Calendar</h2>
-        <p>Some content here...</p>
-      </div>
+    </div>
 
-      <div class="card" id="notesCard" style="display: none;">
+    <div class="card" id="messagesCard" style="display: none;">
+      <h2>Messages</h2>
+      <p>Some content here...</p>
+    </div>
 
-          <div class="editor">
-            <textarea id="note"></textarea>
-          </div>
-          <div class="toolbar">
-            <button id="saveTxtButton">Save</button>
-            <button id="clearButton">Clear</button>
-          </div>
+    <div id="settingsCard" class="card">
+      <!-- Other content in the settings page -->
 
-      </div>
-
-      <div class="card" id="messagesCard" style="display: none;">
-        <h2>Messages</h2>
-        <p>Some content here...</p>
-      </div>
-
-      <div id="settingsCard" class="card">
-        <!-- Other content in the settings page -->
-      
-        <button id="toggleButton">Toggle Theme</button>
-      </div>
+      <button id="toggleButton">Toggle Theme</button>
+    </div>
 
   </div>
 
