@@ -9,6 +9,7 @@ body {
 @media screen and (max-width: 481px) {
   body {
     flex-direction: column;
+    width: 410px;
   }
 }
 
@@ -27,8 +28,11 @@ a:visited:hover {
 }
 
 h1 {
-  margin-top: 20px;
   margin: 10px;
+}
+
+#tasksCard h1 {
+  margin: 50px;
 }
 
 .heading {
@@ -63,7 +67,6 @@ h1 {
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 50px;
-    padding: 15px;
     height: 15px;
     width: 300px;
   }
@@ -98,14 +101,18 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: 50px;
 }
 
+@media screen and (max-width: 481px) {
+  .siding {
+    margin-left: 0px;
+  }
+  }
+
 .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px;
   padding-top: 100px;
+  margin-left: 75px;
   height: 75vh;
 }
 
@@ -116,12 +123,11 @@ h1 {
     justify-content: center;
     align-items: center;
     padding-top: 0px;
+    margin-left: 0px;
   }
 }
 
 .card {
-  border-radius: 5px;
-  width: 300px;
   transition: all 0.5s ease-in-out;
 }
 
@@ -176,7 +182,6 @@ h1 {
 
 @media screen and (max-width: 481px) {
   #userCard {
-    margin-top: 100px;
     width: 250px;
   }
 }
@@ -217,6 +222,10 @@ h1 {
   transition: all 0.5s ease-in-out;
 }
 
+.user-grid-one:hover {
+  transform: translateY(-5px);
+}
+
 @media screen and (max-width: 481px) {
   .user-grid-one {
     height: 300px;
@@ -235,6 +244,10 @@ h1 {
   height: 300px;
   width: 400px;
   transition: all 0.5s ease-in-out;
+}
+
+.user-grid-two:hover {
+  transform: translateY(-5px);
 }
 
 @media screen and (max-width: 481px) {
@@ -257,6 +270,10 @@ h1 {
   transition: all 0.5s ease-in-out;
 }
 
+.user-grid-three:hover {
+  transform: translateY(-5px);
+}
+
 @media screen and (max-width: 481px) {
   .user-grid-three {
     height: 300px;
@@ -275,6 +292,10 @@ h1 {
   height: 300px;
   width: 400px;
   transition: all 0.5s ease-in-out;
+}
+
+.user-grid-four:hover {
+  transform: translateY(-5px);
 }
 
 @media screen and (max-width: 481px) {
@@ -297,6 +318,10 @@ h1 {
   transition: all 0.5s ease-in-out;
 }
 
+.user-grid-five:hover {
+  transform: translateY(-5px);
+}
+
 @media screen and (max-width: 481px) {
   .user-grid-five {
     height: 300px;
@@ -317,6 +342,10 @@ h1 {
   transition: all 0.5s ease-in-out;
 }
 
+.user-grid-six:hover {
+  transform: translateY(-5px);
+}
+
 @media screen and (max-width: 481px) {
   .user-grid-six {
     height: 300px;
@@ -326,27 +355,27 @@ h1 {
 
 
 #tasksCard {
-  height: 650px;
+  height: 750px;
   width: 1400px;
   margin-top: 75px;
-  padding: 20px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   background-color: #fffbbd;
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
   align-items: center;
   opacity: .95;
-  overflow-y: auto;
 }
 
 @media screen and (max-width: 481px) {
   #tasksCard {
     margin-top: 0px;
-    margin-bottom: 150px;
+    margin-bottom: 200px;
     height: 600px;
-    width: 350px;
+    width: 400px;
   }
 }
 
@@ -354,7 +383,6 @@ h1 {
 
 form {
   background-color: #fffbbd;
-  display: flex;
   align-items: center;
   margin-top: 40px;
   margin-bottom: 20px;
@@ -363,7 +391,7 @@ form {
 
 @media screen and (max-width: 1007px) {
   form {
-    width: 350px;
+    width: 400px;
   }
 }
 
@@ -398,32 +426,25 @@ button[type="submit"]:hover {
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 100%;
-  flex-grow: 1;
-  max-height: calc(100% - 60px);
-  overflow-y: auto;
 }
 
-@media (max-width: 481px) {
-  .todo-list {
-    flex-grow: 1;
-    max-height: calc(100% - 60px);
-    overflow-y: auto;
-  }
-}
 
 .todo-list li {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   text-align: left;
   padding: 10px;
-  margin-bottom: 10px;
+  margin: 15px;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   background-color: #fffddaa9;
   transition: all 0.3s ease;
   opacity: .9;
+}
+
+@media (max-width: 481px) {
+  .todo-list li {
+    width: 350px;
+  }
 }
 
 .todo-list li:hover {
@@ -478,8 +499,8 @@ button[type="submit"]:hover {
 }
 
 .dragging {
-  opacity: 0.5;
-  transform: scale(0.98);
+  opacity: 1;
+  transform: scale(0.95);
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
@@ -500,7 +521,43 @@ button[type="submit"]:hover {
 
 
 
+.folder {
+  display: flex;
+  align-items: center;
+}
 
+.pro-sidebar {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin-right: 50px;
+  background-color: #fffbbd;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  height: 50px;
+  width: 50px;
+}
+
+.pro-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5px;
+  margin: 20px;
+  margin-top: 20px;
+  background-color: #fffbbd;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  height: 750px;
+  width: 1300px;
+}
+
+@media screen and (max-width: 481px) {
+  .pro-content {
+    margin-top: 0px;
+  }
+}
 
 
 
@@ -508,25 +565,22 @@ button[type="submit"]:hover {
 #notesCard {
   width: 1400px;
   margin-top: 75px;
-  margin-bottom: 150px;
-  padding: 20px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   background-color: #fffbbd;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   text-align: center;
-  align-items: center;
   opacity: .95;
+  flex-grow: 1;
   overflow-y: auto;
 }
 
 @media screen and (max-width: 481px) {
   #notesCard {
-    margin-top: 0;
-    height: 600px;
-    width: 350px;
+    margin-top: 0px;
+    width: 400px;
+    margin-bottom: 200px;
   }
 }
 
@@ -616,17 +670,17 @@ button[type="submit"]:hover {
 }
 
 textarea {
-  background-color: #fffcd4;
+  background-color: #fffbbd;
   color: rgba(0, 0, 0, 0.603);
-  width: 1350px;
+  width: 1300px;
   height: 500px;
+  margin: 20px;
   border: none;
   resize: none;
   font-size: 16px;
   line-height: 1.5;
   padding: 10px;
   border-radius: 10px;
-  margin: auto;
   opacity: .9;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   font-family: 'Quicksand', sans-serif;
