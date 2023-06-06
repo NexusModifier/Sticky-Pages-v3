@@ -15,17 +15,6 @@ function changeContent(page) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
   function changeContent(page) {
     var contentDivs = document.getElementsByClassName('card');
     
