@@ -1,3 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
 body {
   display: flex;
   background-color: rgb(252, 252, 215);
@@ -9,7 +18,6 @@ body {
 @media screen and (max-width: 481px) {
   body {
     flex-direction: column;
-    width: 410px;
   }
 }
 
@@ -51,6 +59,7 @@ h1 {
 .sidebar {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: #333;
   box-shadow: rgb(0, 0, 0) 3px 3px 6px 0px inset, rgba(154, 167, 125, 0.5) -3px -3px 6px 1px inset;
   color: #fffbbd;
@@ -358,7 +367,6 @@ h1 {
 #tasksCard {
   height: 750px;
   width: 1400px;
-  margin-top: 75px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   background-color: #fffbbd;
@@ -373,7 +381,6 @@ h1 {
 
 @media screen and (max-width: 481px) {
   #tasksCard {
-    margin-top: 100px;
     margin-bottom: 200px;
     height: 600px;
     width: 400px;
@@ -565,21 +572,19 @@ button[type="submit"]:hover {
 
 #notesCard {
   width: 1400px;
-  margin-top: 75px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   background-color: #fffbbd;
   display: flex;
   flex-direction: column;
+  align-self: center;
   text-align: center;
   opacity: .95;
-  flex-grow: 1;
-  overflow-y: auto;
 }
 
 @media screen and (max-width: 481px) {
   #notesCard {
-    margin-top: 0px;
+    margin-top: 50px;
     width: 400px;
     margin-bottom: 200px;
   }
@@ -587,9 +592,6 @@ button[type="submit"]:hover {
 
 
 .notepad {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: #fffbbd;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
@@ -606,12 +608,11 @@ button[type="submit"]:hover {
 
 .toolbar {
   background-color: #fffbbd;
-  padding: 10px;
+  padding-bottom: 20px;
   margin-left: 400px;
   margin-right: 400px;
   border-radius: 10px;
   display: flex;
-  justify-content: center;
   opacity: .95;
   font-family: 'Quicksand', sans-serif;
 }
